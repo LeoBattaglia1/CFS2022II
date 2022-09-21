@@ -1,0 +1,26 @@
+PARA EJECUTAR EN EL VISUAL:
+
+1) tsc (el nombre del archivo.ts)
+
+2) node (el nombre del archivo.js)
+
+PARA SUBIR UN ARCHIVO A GIT
+
+1- agregar archivos al local 
+git add <nombre del archivo> o git add . (agrega todos los archivos)
+
+2 - hacemos un commit (algun comentario del archivo) OPCIONAL
+git commit -m "aqui va el mensaje"
+
+3 - subimos nuestro local al remoto
+git push origin main o branch
+
+---------------------------------------------
+para volver para atras o deshacer
+git restore
+-------------------------
+git status
+te muestra la situacion actual 
+-------------------
+git branch
+crea una nueva rama
