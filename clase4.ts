@@ -8,7 +8,7 @@ class Auto {
         this. estaEnsendido = estaEnsendido;
     }
 
-   public desascelerar() : void {
+    public desascelerar() : void {
         this.velocidad = this.velocidad - 1;
     }
     
