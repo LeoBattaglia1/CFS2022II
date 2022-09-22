@@ -3,7 +3,7 @@ class Animal{
     nombre : string;
 
     mostrarInfo(){
-        console.log('La info es: Nombre '${this.cantidadDePatas}')
+        console.log("La info es:")
     }
 
     constructor(cantidadDePatas:number, nombre:string){
