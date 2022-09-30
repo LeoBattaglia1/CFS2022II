@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as readFileSync from 'readline-sync';
 
 
 class GestorDeArchivos {
@@ -30,20 +31,20 @@ class Auto{
 
 //class RegistroAutomotor{
 
-    private arregloAutosRegistados: string[];
+   // private arregloAutosRegistados: string[];
 
-    public constructor(arregloAutosRegistrados: string[]) {
-        this.arregloAutosRegistados=arregloAutosRegistrados;
-}
-    public getListaAutos() {
-    return this.arregloAutosRegistados;
-}
-
-
-    }
+    //public constructor(arregloAutosRegistrados: string[]) {
+      //  this.arregloAutosRegistados=arregloAutosRegistrados;
+//}
+    //public getListaAutos() {
+    //return this.arregloAutosRegistados;
+//}
 
 
-}
+    //}
+
+
+//}
     
 function crearRegistro(auto: string, arrayRegistro: Array<Auto>): void {
 
@@ -57,6 +58,24 @@ function crearRegistro(auto: string, arrayRegistro: Array<Auto>): void {
     arrayRegistro.push(nuevoRegistro);
 }
 
+function modificarRegistro(arrayRegistro: Array<Auto>,  posicion: number): void {
+    
+    let patente: string = readFileSync.question("Ingrese la patente: ")
+    let marca: string = readFileSync.question("Ingrese la marca: ");
+  
+    let nuevoRegistro = new Auto(patente, marca);
+
+    arrayRegistro[posicion] = nuevoRegistro;
+}
+
+function borrarRegistro(arrayRegistro: Array<Auto>,  posicion: number): void {
+
+    delete arrayRegistro[posicion];
+}
+
+    
+ 
+
 
 
 //Inicio programa
@@ -64,7 +83,7 @@ let datos = new GestorDeArchivos('registroAuto.txt'); // devuelve un arreglo de 
 let arrayRegistro: Array<Auto> = [];
 
 
-//creo array de objetos
+
 
 for (let i: number = 0; i < datos.getArregloString().length; i++) {
 
@@ -74,3 +93,13 @@ for (let i: number = 0; i < datos.getArregloString().length; i++) {
 }
 
 console.log(arrayRegistro);
+
+modificarRegistro(arrayRegistro,1);
+
+console.log(arrayRegistro);
+
+borrarRegistro(arrayRegistro,1);
+
+console.log(arrayRegistro);
+
+
