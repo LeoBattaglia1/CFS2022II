@@ -1,0 +1,17 @@
+Responder las siguientes preguntas
+Que es un objeto?
+Es una instancia de la clase
+Que es una clase?
+Es un "molde" que contiene atributos y metodos. Los objetos se creen con una clase y "utilizan" dichos atributos y metodos
+A que se llama metodo constructor?
+Se encarga de inicializar el estado interno de una instancia
+Que son los modificadores de acceso?
+son los que se encargan de hacer visible, o no, atributos y/o metodos.
+Que diferencia hay entre uno privado y uno protegido?
+el privado puede ser leido y modificado por otra clase y el protegido no.
+Cuando se usa el this?
+cuando queremos hacer referencia a una variable interna de la clase
+Cuando se usa el super?
+cuando queremos heredar un atributo o metodo de una clase padre
+A que se llama sub-clase, o clase hija?
+es una clase que va a heredar los atributos y metodos de una clase padre. A su vez una sub clase puede agregar nuevos atributos y metodos
