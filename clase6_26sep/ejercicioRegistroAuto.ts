@@ -29,23 +29,6 @@ class Auto{
     }
 }
 
-//class RegistroAutomotor{
-
-   // private arregloAutosRegistados: string[];
-
-    //public constructor(arregloAutosRegistrados: string[]) {
-      //  this.arregloAutosRegistados=arregloAutosRegistrados;
-//}
-    //public getListaAutos() {
-    //return this.arregloAutosRegistados;
-//}
-
-
-    //}
-
-
-//}
-    
 function crearRegistro(auto: string, arrayRegistro: Array<Auto>): void {
 
     let datosAuto : string[] = auto.split(','); 

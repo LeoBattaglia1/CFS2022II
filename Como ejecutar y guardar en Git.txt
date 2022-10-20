@@ -24,3 +24,6 @@ te muestra la situacion actual
 -------------------
 git branch
 crea una nueva rama
+--------------------------
+git checkout -b "nombre"
+para crear y moverse de una rama a otra
